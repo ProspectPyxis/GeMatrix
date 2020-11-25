@@ -1,0 +1,6 @@
+commands/
+data/
+node_modules/
+.eslintrc.js
+global_config.js
+temp.md
