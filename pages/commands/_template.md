@@ -2,6 +2,11 @@
 
 Information about this command.
 
+**Aliases:**
+
+- `alias`
+- `anotheralias`
+
 **Usage:**
 ```
 example command usage
@@ -10,11 +15,11 @@ another example if necessary
 
 ## Parameters
 
-- **Parameter name**
+### Parameter name
 
-  Explanation on what the parameter does.
+Explanation on what the parameter does.
 
-- **Another parameter name**
+### Another parameter name
 
   Explanation on what the parameter does.
 
