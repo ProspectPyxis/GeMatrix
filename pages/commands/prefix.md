@@ -4,11 +4,11 @@ Sets the bot prefix for this server.
 
 *Note that you may ping the bot at any time to make it send the current prefix!*
 
-### Alias(es):
+### Alias(es)
 
 *None available.*
 
-### Usage:
+### Usage
 ```
 prefix [prefix]
 ```

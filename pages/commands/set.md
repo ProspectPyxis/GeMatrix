@@ -2,11 +2,11 @@
 
 Sets a guild-specific setting.
 
-### Alias(es):
+### Alias(es)
 
 *None available.*
 
-### Usage:
+### Usage
 ```
 set [option] [value]
 ```

@@ -2,11 +2,11 @@
 
 Pings the bot and its API, getting latency.
 
-### Alias(es):
+### Alias(es)
 
 *None available.*
 
-### Usage:
+### Usage
 ```
 ping
 ```
