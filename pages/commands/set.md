@@ -8,7 +8,7 @@ Sets a guild-specific setting.
 
 ### Usage
 ```
-set [option] [value]
+set <option> <value>
 ```
 
 ## Parameters
