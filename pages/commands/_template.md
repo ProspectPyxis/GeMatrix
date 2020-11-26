@@ -30,3 +30,10 @@ another example if necessary
     ```
     example usage using this parameter value, if necessary
     ```
+
+## Example(s)
+
+- Describe what the following command will do (omit section if unneeded)
+  ```
+  example command run
+  ```
