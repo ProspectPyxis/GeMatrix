@@ -12,6 +12,8 @@ The basic rules of the game.
 
 The instructions for playing this game within the bot itself (i.e. what to input on your turn, etc.)
 
+## Game options
+
 ## Variations
 
 ### Variation name
@@ -23,3 +25,11 @@ Explain this variant here.
 #### Rules
 
 Explain the addition rules for this variant.
+
+#### How to play
+
+Additional instructions for playing this variant.
+
+#### Variant options
+
+Options specific to this variant.
