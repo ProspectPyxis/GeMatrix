@@ -2,7 +2,11 @@
 
 Links the [credits page](../misc/credits.md) on this site.
 
-**Usage:**
+## Alias(es):
+
+*None available.*
+
+### Usage:
 ```
 credits
 ```
