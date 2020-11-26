@@ -23,18 +23,22 @@ Explanation on what the parameter does.
 
   Explanation on what the parameter does.
 
- - **Possible parameter value**
+#### Possible parameter value
 
   For parameters which have a select few possible values.
 
- - **Another possible parameter value**
+#### Another possible parameter value
 
-  And so on. If the parameter value changes the necessary values of other parameters after, explain them here.
+And so on. If the parameter value changes the necessary values of other parameters after, explain them here.
 
-  **Usage:**
-  ```
-  example usage using this parameter value, if necessary
-  ```
+**Usage:**
+```
+example usage using this parameter value, if necessary
+```
+
+- **Sub-parameter**
+
+  If the command has sub-parameters, explain them here.
 
 ## Example(s)
 
