@@ -11,6 +11,13 @@ prefix [prefix]
 
 ## Parameters
 
-- **prefix**
+### prefix
 
-  The new prefix to use. If left blank, will set the prefix to the bot's default prefix.
+The new prefix to use. If left blank, will set the prefix to the bot's default prefix.
+
+## Example(s)
+
+- Set the server's prefix to `//`
+  ```
+  prefix //
+  ```

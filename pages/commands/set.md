@@ -9,17 +9,17 @@ set [option] [value]
 
 ## Parameters
 
-- **option**
+### option
 
-  The name of the option to set. *Options are case sensitive!*
+The name of the option to set. *Options are case sensitive!*
 
-- **value**
+### value
 
-  The value to set the option to.
+The value to set the option to.
 
-## Examples
+## Example(s)
 
-  - Disable the `setup redo` command for this server
-    ```
-    set allowRedo false
-    ```
+- Disable the `setup redo` command for this server
+  ```
+  set allowRedo false
+  ```
