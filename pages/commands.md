@@ -10,6 +10,7 @@ Most of the command pages should be self-explanatory. However, the "Usage" secti
 - **[square brackets]** indicate an *optional* parameter.
 - **[square brackets=foo]** indicates that if left blank, the parameter will default to whatever comes after the equal sign.
 - **<...>** indicates that different parameters may be required here depending on other parameters supplied - for this, you should read the "Parameters" section for more details.
+- **<angle brackets...>** or **[square brackets...]** indicates that the parameter can take many values at once.
 - If there are multiple lines for usage, it means that the command will require different parameters based on the first parameter or so.
 
 ## List of commands

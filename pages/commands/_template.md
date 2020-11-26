@@ -21,11 +21,11 @@ Explanation on what the parameter does.
 
 ### Another parameter name
 
-  Explanation on what the parameter does.
+Explanation on what the parameter does.
 
 #### Possible parameter value
 
-  For parameters which have a select few possible values.
+For parameters which have a select few possible values.
 
 #### Another possible parameter value
 

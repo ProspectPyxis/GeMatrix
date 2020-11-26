@@ -2,7 +2,7 @@
 
 A quick blurb introducing the game.
 
-**Aliases:** list game aliases here, if applicable
+**Aliases:** `list game aliases here, if applicable`
 
 ## Rules
 
@@ -20,7 +20,7 @@ The instructions for playing this game within the bot itself (i.e. what to input
 
 Explain this variant here.
 
-**Aliases:** list variant aliases here, if applicable
+**Aliases:** `list variant aliases here, if applicable`
 
 #### Rules
 

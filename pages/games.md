@@ -8,6 +8,6 @@ The classic pen-and-paper game that you'll always tie...unless you know what you
 
 Also includes a strange variant that makes the game more complex and less trivial!
 
-**Aliases:** Xs and Os, Noughts and Crosses, Tic tac toe, tictactoe
+**Aliases:** `Xs and Os`, `Noughts and Crosses`, `Tic tac toe`, `tictactoe`
 
-**Variations:** Dan's Variation
+**Variations:** `Dan's Variation`
