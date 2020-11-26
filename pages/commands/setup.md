@@ -122,6 +122,12 @@ Starts the game.
 
 Cancels the setup.
 
+#### redo
+
+This is a special subcommand - if run within 20 seconds of a finished game and the server's `allowRedo` option is set to `true`, a new setup will automatically start, with the same game, players, turn order, variant, and game options already set.
+
+*You do not need to be host to use this subcommand!*
+
 ## Example(s)
 
 - Starts a setup of Connect Four.
