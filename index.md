@@ -8,8 +8,7 @@ Unfortunately, as this bot is still in rapid development and has no host, you ca
 
 ## Commands
 
-- [credits](pages/commands/credits.md)
-- [ping](pages/commands/ping.md)
+You may find the commands list [here](pages/commands.md). You may also run the command `help` without any parameters to output the commands list to a channel.
 
 ## Other
 
