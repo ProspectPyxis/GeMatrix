@@ -5,3 +5,12 @@ Boardcord is a Discord bot that allows you to play various minigames - whether i
 ## Adding the bot
 
 Unfortunately, as this bot is still in rapid development and has no host, you cannot add this bot to your server yet. You *can* self host the bot, though - please see the GitHub repository readme on how to do so!
+
+## Commands
+
+- [credits](pages/commands/credits.md)
+- [ping](pages/commands/ping.md)
+
+## Other
+
+- [Bot credits](pages/misc/credits.md)
