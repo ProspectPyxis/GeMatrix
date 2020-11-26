@@ -297,6 +297,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv-rails
   github-pages
+  jekyll-relative-links
 
 BUNDLED WITH
    2.1.4
