@@ -2,7 +2,7 @@
 
 The classic pen-and-paper game that you'll always tie...unless you know what you're doing and your opponent doesn't.
 
-**Aliases:** `Xs and Os`, `Noughts and Crosses`, `Tic tac toe`, `tictactoe`
+**Aliases:** `Xs and Os`, `Noughts and Crosses`
 
 ## Rules
 
@@ -33,7 +33,7 @@ As this variant doesn't seem to have a name otherwise, it's been dubbed "Dan's V
 
 (Ideally, there would be a "tournament rules" option which bans the board(s) alluded to in the comment, but we haven't playtested it enough to know what it is yet - that's coming soon!)
 
-**Aliases:** `Dan's Variant`, `Dans variation`, `Dans variant`, `dansvariation`, `dansvariant`, `dans`
+**Aliases:** `Dan's Variant`, `Dan's`
 
 #### Rules
 

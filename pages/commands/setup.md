@@ -17,7 +17,7 @@ setup <subcommand> <...>
 
 ### game
 
-The name of the game to start. This could either use the full game name or any of its aliases. It's also case insensitive, so don't worry about capitalization.
+The name of the game to start. This could either use the full game name or any of its aliases. The command will automatically ignore spaces and symbols, so don't worry about exact matches too much.
 
 If the game name is followed by a ` / ` (spaces included), what comes after the slash will automatically be set as the variant to run, if found.
 
