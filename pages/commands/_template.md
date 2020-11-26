@@ -2,15 +2,15 @@
 
 Information about this command.
 
-### Alias(es):
+### Alias(es)
 
 - `alias`
 - `anotheralias`
 
-### Usage:
+### Usage
 ```
-example command usage
-another example if necessary
+example <command> [usage]
+another <example> <if> [necessary]
 ```
 
 ## Parameters
