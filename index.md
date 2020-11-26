@@ -12,6 +12,10 @@ Unfortunately, as this bot is still in rapid development and has no host, you ca
 
 You may find the commands list [here](pages/commands.md). You may also run the command `help` without any parameters to output the commands list to a channel.
 
+## Games
+
+You may find a list of all games currently available on this bot [here](pages/games.md).
+
 ## Other
 
 - [Bot credits](pages/misc/credits.md)
