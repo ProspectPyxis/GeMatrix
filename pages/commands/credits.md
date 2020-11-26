@@ -1,6 +1,6 @@
 # Command Name
 
-Links the [credits page](/pages/misc/credits.md) on this site.
+Links the [credits page](../misc/credits.md) on this site.
 
 **Usage:**
 ```
