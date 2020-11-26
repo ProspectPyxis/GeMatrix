@@ -1,4 +1,4 @@
-# Command Name
+# credits
 
 Links the [credits page](../misc/credits.md) on this site.
 
