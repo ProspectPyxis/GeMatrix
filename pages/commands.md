@@ -18,6 +18,9 @@ Most of the command pages should be self-explanatory. However, the "Usage" secti
 Click a command below for more details on it!
 
 - [credits](commands/credits.md)
+- [game](commands/game.md)
+- [help](commands/help.md)
 - [ping](commands/ping.md)
 - [prefix](commands/prefix.md)
 - [set](commands/set.md)
+- [setup](commands/setup.md)
