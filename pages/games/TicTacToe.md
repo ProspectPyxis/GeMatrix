@@ -1,6 +1,6 @@
 # Tic-tac-toe
 
-The classic board game that you'll always tie...unless you know what you're doing and your opponent doesn't.
+The classic pen-and-paper game that you'll always tie...unless you know what you're doing and your opponent doesn't.
 
 **Aliases:** Xs and Os, Noughts and Crosses, Tic tac toe, tictactoe
 
@@ -29,11 +29,11 @@ This variant was inspired by a reply to a comment from [this video](https://yout
 ![Comment that inspired this variant](../../assets/images/page/DansVariationComment.png)
 *(open the image in a new tab if this is too small!)*
 
-As this variant doesn't seem to have a name otherwise, it's been dubbed "Dan's Variant", from the username of the commenter.
+As this variant doesn't seem to have a name otherwise, it's been dubbed "Dan's Variation", from the username of the commenter.
 
 (Ideally, there would be a "tournament rules" option which bans the board(s) alluded to in the comment, but we haven't playtested it enough to know what it is yet - that's coming soon!)
 
-**Aliases:** Dans variation, dansvariation, dans
+**Aliases:** Dan's Variant, Dans variation, Dans variant, dansvariation, dansvariant, dans
 
 #### Rules
 
@@ -45,3 +45,7 @@ As this variant doesn't seem to have a name otherwise, it's been dubbed "Dan's V
 #### How to play
 
 Simply type 2 letters in your message rather than 1. Separating the letters with a space is optional.
+
+#### Variant options
+
+*No options are available for this variant.*
