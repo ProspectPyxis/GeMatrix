@@ -17,9 +17,14 @@ setup <subcommand> <...>
 
 ### game
 
-The name of the game to start. This could either use the full game name or any of its aliases. The command will automatically ignore spaces and symbols, so don't worry about exact matches too much.
+The name of the game to start. This could either use the full game name or any of its aliases.
 
-If the game name is followed by a ` / ` (spaces included), what comes after the slash will automatically be set as the variant to run, if found.
+This command will automatically sanitize your input for you, so you don't have to worry about:
+- Capitalizing correctly
+- Using the correct symbols and spaces in the correct places (no dashes necessary for Tic-tac-toe, for example)
+- Whether to use a number or a number word (Connect 4 and Connect Four are both valid)
+
+If the game name is followed by a ` / ` (spaces included), what comes after the slash will automatically be set as the variant to run, if found. This will also be sanitized, so don't worry about it.
 
 ### subcommand
 
