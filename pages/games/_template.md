@@ -14,6 +14,12 @@ The instructions for playing this game within the bot itself (i.e. what to input
 
 ## Game options
 
+- **optionName**
+
+  Explanation on what this option does.
+
+  **Possible values:** Any integer
+
 ## Variations
 
 ### Variation name
@@ -32,4 +38,8 @@ Additional instructions for playing this variant.
 
 #### Variant options
 
-Options specific to this variant.
+- **optionName**
+
+  Explanation on what this option does.
+
+  **Possible values:** Any integer
