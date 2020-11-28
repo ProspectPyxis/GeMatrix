@@ -8,6 +8,10 @@ This bot doesn't just rely on tried-and-tested classics, either - even slightly 
 
 Unfortunately, as this bot is still in rapid development and has no host, you cannot add this bot to your server yet. You *can* self host the bot, though - please see the GitHub repository readme on how to do so!
 
+## Getting started
+
+Confused on how to use the bot? Read [this page](pages/guide.md) for a quickstart guide on how to get a game running!
+
 ## Commands
 
 You may find the commands list [here](pages/commands.md). You may also run the command `help` without any parameters to output the commands list to a channel.
