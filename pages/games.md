@@ -18,4 +18,4 @@ The classic four-in-a-row game that, for some reason, has had the box art memed 
 
 **Alias(es):** `Four-in-a-row`
 
-**Variation(s):** *None*
+**Variation(s):** `5-in-a-row`
