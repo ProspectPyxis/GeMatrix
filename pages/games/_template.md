@@ -2,7 +2,7 @@
 
 A quick blurb introducing the game.
 
-**Aliases:** `list game aliases here, if applicable`
+**Alias(es):** `list game aliases here, if applicable`
 
 ## Rules
 
@@ -18,6 +18,7 @@ The instructions for playing this game within the bot itself (i.e. what to input
 
   Explanation on what this option does.
 
+  **Default:** `default value`
   **Possible values:** Any integer
 
 ## Variations
@@ -26,7 +27,7 @@ The instructions for playing this game within the bot itself (i.e. what to input
 
 Explain this variant here.
 
-**Aliases:** `list variant aliases here, if applicable`
+**Alias(es):** `list variant aliases here, if applicable`
 
 #### Rules
 

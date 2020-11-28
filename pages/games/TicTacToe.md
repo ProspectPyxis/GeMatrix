@@ -2,11 +2,11 @@
 
 The classic pen-and-paper game that you'll always tie...unless you know what you're doing and your opponent doesn't.
 
-**Aliases:** `Xs and Os`, `Noughts and Crosses`
+**Alias(es):** `Xs and Os`, `Noughts and Crosses`
 
 ## Rules
 
-- Start on a 3x3 grid
+- Start with a 3x3 grid
 - Player 1 plays X, player 2 plays O
 - Take turns placing your marker in the grid one by one
 - A player wins when a 3 in a row is made horizontally, vertically, or diagonally
@@ -33,7 +33,7 @@ As this variant doesn't seem to have a name otherwise, it's been dubbed "Dan's V
 
 (Ideally, there would be a "tournament rules" option which bans the board(s) alluded to in the comment, but we haven't playtested it enough to know what it is yet - that's coming soon!)
 
-**Aliases:** `Dan's Variant`, `Dan's`
+**Alias(es):** `Dan's Variant`, `Dan's`
 
 #### Rules
 
