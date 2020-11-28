@@ -150,7 +150,7 @@ This is a special subcommand - if run within 20 seconds of a finished game and t
   setup invite @User#1234 @User2#5678
   ```
 
-- Set the game option `turnLimit` for the game to 50
+- Set the game option `turnlimit` for the game to 50
   ```
-  setup option turnLimit 50
+  setup option turnlimit 50
   ```
