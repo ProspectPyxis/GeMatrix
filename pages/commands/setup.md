@@ -32,9 +32,23 @@ If a setup is already running in the channel, you may pass a *subcommand* into t
 
 The possible subcommands are:
 
+#### access
+
+Toggles the game from private to public or vice versa.
+
+If a game is public, anyone may join the game by using the subcommand `join` or just by using the normal `bc!join` command. If a game is private, you must use the `invite` subcommand to add players to the game.
+
+#### join
+
+Joins the current game. You can also use `bc!join` to do the same thing.
+
+*The game must be public for this command to work, and this command does nothing if you're already in the game!*
+
 #### invite
 
 Invites any mentioned users to the game. The invitee must then type "accept" within 30 seconds to join the game.
+
+*The game must be private for this command to work!*
 
 **Usage:**
 ```
