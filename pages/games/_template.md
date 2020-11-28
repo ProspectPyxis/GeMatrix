@@ -19,6 +19,7 @@ The instructions for playing this game within the bot itself (i.e. what to input
   Explanation on what this option does.
 
   **Default:** `default value`
+  
   **Possible values:** Any integer
 
 ## Variations

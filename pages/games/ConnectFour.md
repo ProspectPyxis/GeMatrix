@@ -24,6 +24,7 @@ If the `popout` option is enabled (see below), prefix the number with "pop " (sp
   If this is set to true, a new move is made available - you may say "pop [column]" to remove a piece from the bottom of the column, as long as that piece is yours. This also means that the game will *never* end in a draw, as you can always pop a piece even if the board is full.
 
   **Default:** `false`
+  
   **Possible values:** Boolean (`true`/`on` or `false`/`off`)
 
 ## Variations
