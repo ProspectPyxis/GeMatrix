@@ -22,4 +22,5 @@ You may find a list of all games currently available on this bot [here](pages/ga
 
 ## Other
 
+- [Per-Server Settings](pages/misc/guildsettings.md)
 - [Bot credits](pages/misc/credits.md)

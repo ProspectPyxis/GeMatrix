@@ -1,6 +1,10 @@
 # set
 
-Sets a guild-specific setting.
+Sets a server-specific setting.
+
+For more details on each individual setting and how to set them, see [this](../misc/guildsettings.md) page.
+
+*You must have the "Manage Server" permission to use this command!*
 
 ### Alias(es)
 
@@ -26,4 +30,9 @@ The value to set the option to.
 - Disable the `setup redo` command for this server
   ```
   set allowRedo false
+  ```
+
+- Add the channel `#game` to the channel whitelist
+  ```
+  set channelWhitelist add #game
   ```
