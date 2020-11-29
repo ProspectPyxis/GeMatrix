@@ -1,6 +1,6 @@
 # Games
 
-This is a listing of all games available for Boardcord at the moment.
+This is a listing of all games available for GeMatrix at the moment.
 
 ## [Tic-tac-toe](games/TicTacToe.md)
 

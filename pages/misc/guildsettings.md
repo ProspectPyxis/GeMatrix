@@ -6,13 +6,13 @@ This bot has a few settings that can be set differently per-server to change its
 
 The bot's prefix for this server. Note that you may get the bot's current prefix at any time by mentioning the bot.
 
-**Default:** `bc!`
+**Default:** `gm!`
 
 **Possible values:** Any string
 
 ## allowRedo
 
-If set to `true`, allows the `bc!setup redo` command to be used to start a new game with the same settings as the recently finished one.
+If set to `true`, allows the `setup redo` command to be used to start a new game with the same settings as the recently finished one.
 
 **Default:** `true`
 

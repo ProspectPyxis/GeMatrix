@@ -1,6 +1,6 @@
 # Commands
 
-This page lists the commands available for Boardcord and how to use them.
+This page lists the commands available for GeMatrix and how to use them.
 
 ## How to read usage
 

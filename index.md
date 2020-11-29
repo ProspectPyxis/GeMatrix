@@ -1,6 +1,6 @@
-# Welcome to Boardcord
+# Welcome to GeMatrix
 
-Boardcord is a Discord bot that allows you to play various minigames - whether it be a tabletop game or just something fun and unique - without having to rely on external programs. Just setup a game right in your own server and go!
+GeMatrix is a Discord bot that allows you to play various minigames - whether it be a tabletop game or just something fun and unique - without having to rely on external programs. Just setup a game right in your own server and go!
 
 This bot doesn't just rely on tried-and-tested classics, either - even slightly more obscure games can be implemented if it's fun! Feel free to suggest any game addition for this bot, and if we have the resources to add it, we just might!
 
