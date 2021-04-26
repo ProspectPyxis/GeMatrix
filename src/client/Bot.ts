@@ -40,7 +40,7 @@ class Bot extends Client {
 		this.logger.info(`Attempting to load a total of ${evtFiles.length} events.`)
 		evtFiles.forEach(async (evtName) => {
 			try {
-				const { evt } = await import(`${evtPath}/${evtName}`)
+				const evt = await import(`${evtPath}/${evtName}`)
 				this.logger.info(`Loading event: ${evt.name}`)
 				this.on(evt.name, evt.run.bind(null, this))
 			} catch(e) {
