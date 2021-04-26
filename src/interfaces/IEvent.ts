@@ -1,4 +1,4 @@
-import { Bot } from "../Client/Bot"
+import { Bot } from "../client/Bot"
 import { ClientEvents } from "discord.js"
 
 interface IRun {
