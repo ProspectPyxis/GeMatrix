@@ -1,3 +1,5 @@
+# This part of .gitignore is from Github's node template
+
 # Logs
 logs
 *.log
@@ -102,3 +104,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Template ends here
+
+src/config.json
