@@ -17,12 +17,12 @@ class Bot extends Client {
 		this.logger.info("Starting pre-initialization phase!")
 
 		const cmdPath = path.join(__dirname, "..", "commands")
-		const cmdFiles = readdirSync(cmdPath).filter((f) => file.endsWith(".ts")
+		const cmdFiles = readdirSync(cmdPath).filter((f) => f.endsWith(".ts"))
 		this.logger.info(`Attempting to load a total of ${cmdFiles.length} commands.`)
 		cmdFiles.forEach((cmdName) => {
 			try {
 				this.logger.info(`Loading command: ${cmdName}`)
-				const cmd = await import(`${cmdPath}/${cmdName}`)
+				const cmd = require(`${cmdPath}/${cmdName}`)
 
 				this.commands.set(cmd.name, cmd)
 				
@@ -36,9 +36,9 @@ class Bot extends Client {
 		})
 
 		const evtPath = path.join(__dirname, "..", "events")
-		const evtFiles = readdirSync(evtPath).filter((f) => file.endsWith(".ts")
+		const evtFiles = readdirSync(evtPath).filter((f) => f.endsWith(".ts"))
 		this.logger.info(`Attempting to load a total of ${evtFiles.length} events.`)
-		evtFiles.forEach((evtName) => {
+		evtFiles.forEach(async (evtName) => {
 			try {
 				const { evt } = await import(`${evtPath}/${evtName}`)
 				this.logger.info(`Loading event: ${evt.name}`)
