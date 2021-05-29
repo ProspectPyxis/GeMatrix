@@ -1,4 +1,4 @@
-import { Client, Collection } from "discord.js"
+import { Client, Collection, User, Channel, MessageAdditions } from "discord.js"
 import path from "path"
 import { readdirSync } from "fs"
 import { ICommand, IEvent, IConfig } from "../interfaces"
@@ -19,10 +19,10 @@ class Bot extends Client {
 		const cmdPath = path.join(__dirname, "..", "commands")
 		const cmdFiles = readdirSync(cmdPath).filter((f) => f.endsWith(".ts"))
 		this.logger.info(`Attempting to load a total of ${cmdFiles.length} commands.`)
-		cmdFiles.forEach((cmdName) => {
+		cmdFiles.forEach(async (cmdName) => {
 			try {
 				this.logger.info(`Loading command: ${cmdName}`)
-				const cmd = require(`${cmdPath}/${cmdName}`)
+				const cmd = await import(`${cmdPath}/${cmdName}`)
 
 				this.commands.set(cmd.name, cmd)
 				
@@ -51,6 +51,14 @@ class Bot extends Client {
 
 		this.logger.info("Logging in...")
 		this.login(this.config.token)
+	}
+
+	public attemptDM (user: User, baseChannel: Channel, content: string, options?: MessageAdditions) {
+		try {
+			user.send(content, options)
+		} catch(e) {
+			this.logger.warn(`Error: couldn't DM user ${user.tag}!`)
+		}
 	}
 }
 
