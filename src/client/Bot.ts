@@ -1,20 +1,31 @@
 import { Client, Collection, User, Channel, MessageAdditions } from "discord.js"
 import path from "path"
-import { readdirSync } from "fs"
+import { readdirSync, readFileSync } from "fs"
 import { ICommand, IEvent, IConfig } from "../interfaces"
-import configJson from "../config.json"
+import toml from "toml"
 import consola, { Consola } from "consola"
 import Enmap from "enmap"
 
 class Bot extends Client {
 	public commands: Enmap = new Enmap()
 	public aliases: Enmap = new Enmap()
-	public config: IConfig = configJson
+	public config: IConfig
 
 	public logger: Consola = consola
 
 	public async init (): Promise<void> {
 		this.logger.info("Starting pre-initialization phase!")
+
+		this.logger.info("Loading config...")
+		const configPath = path.join(__dirname, "..", "config.toml")
+		const configFile = readFileSync(configPath)
+		try {
+			this.config = toml.parse(configFile)
+		} catch(e) {
+			this.logger.error(`Fatal Error: Unable to read config: ${e}`)
+			return
+		}
+		this.logger.success("Config loaded successfully!")
 
 		const cmdPath = path.join(__dirname, "..", "commands")
 		const cmdFiles = readdirSync(cmdPath).filter((f) => f.endsWith(".ts"))
@@ -40,7 +51,7 @@ class Bot extends Client {
 		this.logger.info(`Attempting to load a total of ${evtFiles.length} events.`)
 		evtFiles.forEach(async (evtName) => {
 			try {
-				const evt = await import(`${evtPath}/${evtName}`)
+				const evt = (await import(`${evtPath}/${evtName}`)).default
 				this.logger.info(`Loading event: ${evt.name}`)
 				this.on(evt.name, evt.run.bind(null, this))
 			} catch(e) {
