@@ -17,9 +17,9 @@ class Bot extends Client {
 		this.logger.info("Starting pre-initialization phase!")
 
 		this.logger.info("Loading config...")
-		const configPath = path.join(__dirname, "..", "config.toml")
-		const configFile = readFileSync(configPath)
 		try {
+			const configPath = path.join(__dirname, "..", "config.toml")
+			const configFile = readFileSync(configPath)
 			this.config = toml.parse(configFile)
 		} catch(e) {
 			this.logger.error(`Fatal Error: Unable to read config: ${e}`)
@@ -36,7 +36,7 @@ class Bot extends Client {
 				const cmd = await import(`${cmdPath}/${cmdName}`)
 
 				this.commands.set(cmd.name, cmd)
-				
+
 				if (cmd.aliases) {
 					cmd.aliases.forEach((alias) => { this.aliases.set(alias, cmd.name) })
 				}
