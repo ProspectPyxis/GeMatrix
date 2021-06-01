@@ -64,6 +64,7 @@ class Bot extends Client {
 		this.login(this.config.token)
 	}
 
+	// TODO: Make this link to a proper page explaining dm permissions
 	public async attemptDM (user: User, baseChannel: Channel, content: string, options?: MessageAdditions) {
 		try {
 			await user.send(content, options)
