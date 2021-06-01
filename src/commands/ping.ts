@@ -3,7 +3,7 @@ import { ICommand } from "../interfaces"
 const command: ICommand = {
 	name: "ping",
 	run: async (bot, msg, args) => {
-		msg.channel.send(`${bot.ws.ping} ping!`)
+		msg.channel.send(`**Pong!** Current ping is ${bot.ws.ping}ms.`)
 	}
 }
 
