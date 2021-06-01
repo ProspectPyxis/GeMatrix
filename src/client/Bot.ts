@@ -33,7 +33,7 @@ class Bot extends Client {
 		cmdFiles.forEach(async (cmdName) => {
 			try {
 				this.logger.info(`Loading command: ${cmdName}`)
-				const cmd = await import(`${cmdPath}/${cmdName}`)
+				const cmd = (await import(`${cmdPath}/${cmdName}`)).default
 
 				this.commands.set(cmd.name, cmd)
 
