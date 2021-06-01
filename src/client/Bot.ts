@@ -64,9 +64,9 @@ class Bot extends Client {
 		this.login(this.config.token)
 	}
 
-	public attemptDM (user: User, baseChannel: Channel, content: string, options?: MessageAdditions) {
+	public async attemptDM (user: User, baseChannel: Channel, content: string, options?: MessageAdditions) {
 		try {
-			user.send(content, options)
+			await user.send(content, options)
 		} catch(e) {
 			this.logger.warn(`Error: couldn't DM user ${user.tag}!`)
 		}
