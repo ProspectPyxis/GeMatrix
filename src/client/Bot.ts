@@ -13,6 +13,9 @@ class Bot extends Client {
 
 	public logger: Consola = consola
 
+	public games: Enmap = new Enmap()
+	public gameStates: Enmap = new Enmap()
+
 	public async init (): Promise<void> {
 		this.logger.info("Starting pre-initialization phase!")
 
