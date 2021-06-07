@@ -26,10 +26,12 @@ class Bot extends Client {
 			this.config = {...defaultConfig, ...toml.parse(configFile)}
 		} catch(e) {
 			this.logger.error(`Fatal Error: Unable to read config: ${e}`)
+			this.exitBot(1)
 			return
 		}
 		if (!this.config.token) {
 			this.logger.error(`Fatal Error: Login token not found`)
+			this.exitBot(1)
 			return
 		}
 		this.logger.success("Config loaded successfully!")
@@ -79,6 +81,12 @@ class Bot extends Client {
 		} catch(e) {
 			this.logger.warn(`Error: couldn't DM user ${user.tag}!`)
 		}
+	}
+
+	public exitBot(exitcode = 0): void {
+		this.logger.info(`Destroying bot instance and exiting with code ${exitcode}.`)
+		process.exitCode = exitcode
+		this.destroy()
 	}
 }
 
