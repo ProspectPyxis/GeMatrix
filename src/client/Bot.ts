@@ -1,7 +1,7 @@
-import { Client, Collection, User, Channel, MessageAdditions } from "discord.js"
+import { Client, User, Channel, MessageAdditions } from "discord.js"
 import path from "path"
 import { readdirSync, readFileSync } from "fs"
-import { ICommand, IEvent, IConfig } from "../interfaces"
+import { IConfig, defaultConfig } from "../interfaces"
 import toml from "toml"
 import consola, { Consola } from "consola"
 import Enmap from "enmap"
@@ -9,7 +9,7 @@ import Enmap from "enmap"
 class Bot extends Client {
 	public commands: Enmap = new Enmap()
 	public aliases: Enmap = new Enmap()
-	public config: IConfig
+	public config: IConfig = defaultConfig
 
 	public logger: Consola = consola
 
@@ -22,10 +22,14 @@ class Bot extends Client {
 		this.logger.info("Loading config...")
 		try {
 			const configPath = path.join(__dirname, "..", "config.toml")
-			const configFile = readFileSync(configPath)
-			this.config = toml.parse(configFile)
+			const configFile = readFileSync(configPath).toString()
+			this.config = {...defaultConfig, ...toml.parse(configFile)}
 		} catch(e) {
 			this.logger.error(`Fatal Error: Unable to read config: ${e}`)
+			return
+		}
+		if (!this.config.token) {
+			this.logger.error(`Fatal Error: Login token not found`)
 			return
 		}
 		this.logger.success("Config loaded successfully!")
@@ -41,7 +45,7 @@ class Bot extends Client {
 				this.commands.set(cmd.name, cmd)
 
 				if (cmd.aliases) {
-					cmd.aliases.forEach((alias) => { this.aliases.set(alias, cmd.name) })
+					cmd.aliases.forEach((alias: string) => { this.aliases.set(alias, cmd.name) })
 				}
 			} catch(e) {
 				this.logger.warn(`Unable to load command ${cmdName}: ${e}`)
@@ -68,9 +72,10 @@ class Bot extends Client {
 	}
 
 	// TODO: Make this link to a proper page explaining dm permissions
-	public async attemptDM (user: User, baseChannel: Channel, content: string, options?: MessageAdditions) {
+	public async attemptDM (user: User, baseChannel: Channel, content: string, options?: MessageAdditions): Promise<void> {
 		try {
-			await user.send(content, options)
+			if (options) await user.send(content, options)
+			else await user.send(content)
 		} catch(e) {
 			this.logger.warn(`Error: couldn't DM user ${user.tag}!`)
 		}
