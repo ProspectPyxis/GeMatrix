@@ -1,9 +1,13 @@
+import { keys } from "ts-transformer-keys"
+
 export interface IConfig {
 	token?: string
 	prefix: string
 }
 
-export const defaultConfig: IConfig = {
+export const ConfigKeys: string[] = keys<IConfig>()
+
+export const DefaultConfig: IConfig = {
 	prefix: "gm!"
 }
 
