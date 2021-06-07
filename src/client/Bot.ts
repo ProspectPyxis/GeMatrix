@@ -23,7 +23,7 @@ class Bot extends Client {
 		try {
 			const configPath = path.join(__dirname, "..", "config.toml")
 			const configFile = readFileSync(configPath).toString()
-			this.config = {...DefaultConfig, ...toml.parse(configFile)}
+			this.config = toml.parse(configFile)
 		} catch(e) {
 			this.logger.error(`Fatal Error: Unable to read config: ${e}`)
 			this.exitBot(1)
@@ -34,6 +34,14 @@ class Bot extends Client {
 			this.exitBot(1)
 			return
 		}
+		// Verify loaded config keys, then merge the default config with the loaded one to overwrite any missing values
+		for (const k of Object.keys(DefaultConfig)) {
+			if (k === "token") continue
+			if (!Object.prototype.hasOwnProperty.call(this.config, k)) {
+				this.logger.warn(`Config value "${k}" not found - it will be overwritten with the default value. Please properly implement the value in config.toml!`)
+			}
+		}
+		this.config = {...DefaultConfig, ...this.config}
 		this.logger.success("Config loaded successfully!")
 
 		const cmdPath = path.join(__dirname, "..", "commands")
