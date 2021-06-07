@@ -1,7 +1,7 @@
 import { Client, User, Channel, MessageAdditions } from "discord.js"
 import path from "path"
 import { readdirSync, readFileSync } from "fs"
-import { IConfig, defaultConfig } from "../interfaces"
+import { IConfig, DefaultConfig } from "../interfaces"
 import toml from "toml"
 import consola, { Consola } from "consola"
 import Enmap from "enmap"
@@ -9,7 +9,7 @@ import Enmap from "enmap"
 class Bot extends Client {
 	public commands: Enmap = new Enmap()
 	public aliases: Enmap = new Enmap()
-	public config: IConfig = defaultConfig
+	public config: IConfig = DefaultConfig
 
 	public logger: Consola = consola
 
@@ -23,7 +23,7 @@ class Bot extends Client {
 		try {
 			const configPath = path.join(__dirname, "..", "config.toml")
 			const configFile = readFileSync(configPath).toString()
-			this.config = {...defaultConfig, ...toml.parse(configFile)}
+			this.config = {...DefaultConfig, ...toml.parse(configFile)}
 		} catch(e) {
 			this.logger.error(`Fatal Error: Unable to read config: ${e}`)
 			this.exitBot(1)
