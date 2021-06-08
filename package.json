@@ -17,6 +17,7 @@
 	"private": false,
 	"devDependencies": {
 		"@tsconfig/node14": "^1.0.0",
+		"@types/node": "^15.12.2",
 		"@typescript-eslint/eslint-plugin": "^4.26.0",
 		"@typescript-eslint/parser": "^4.26.0",
 		"consola": "^2.15.3",
