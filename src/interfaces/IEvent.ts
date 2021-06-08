@@ -1,8 +1,8 @@
-import { Bot } from "../client/Bot"
+import Bot from "../client/Bot"
 import { ClientEvents } from "discord.js"
 
 interface IRun {
-	(bot: Bot, ...args: any[])
+	(bot: Bot, ...args: any[]): void
 }
 
 export interface IEvent {

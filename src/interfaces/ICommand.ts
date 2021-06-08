@@ -1,8 +1,8 @@
-import { Bot } from "../client/Bot"
+import Bot from "../client/Bot"
 import { Message } from "discord.js"
 
 interface IRun {
-	(client: Bot, message: Message, args: string[])
+	(client: Bot, message: Message, args: string[]): void
 }
 
 export interface ICommand {
