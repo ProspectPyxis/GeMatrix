@@ -8,7 +8,9 @@ const event: IEvent = {
 
 		if (msg.guild && msg.content.startsWith(bot.config.prefix)) {
 			const args = msg.content.slice(bot.config.prefix.length).trim().split(/ +/g)
-			const command = args.shift().toLowerCase()
+			let command = args.shift()
+			if (!command) return
+			command = command.toLowerCase()
 
 			const cmd = bot.commands.get(command) || bot.commands.get(bot.aliases.get(command))
 
